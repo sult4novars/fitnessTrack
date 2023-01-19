@@ -16,7 +16,6 @@ import Meta from '~/layouts/Meta';
 import FormField from '~/components/FormField';
 
 // images
-import { logo } from '~/assets/images';
 import { SpinnerRing } from '~/components/Spinner';
 
 interface ChangePasswordInput {
