@@ -32,7 +32,7 @@ const Custom404 = () => {
         <p className='mt-8 text-base'>
           The link you followed may be broken, or the page may have been removed.{' '}
           <NextLink href={ROUTES.HOME}>
-            <a className='text-primary'>Go back to Instagram</a>
+            <a className='text-primary'>Go back to Fitness Track</a>
           </NextLink>
           .
         </p>

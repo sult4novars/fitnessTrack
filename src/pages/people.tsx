@@ -83,7 +83,7 @@ const People = ({ nextPage }: PeopleProps) => {
     );
 
   return (
-    <Meta title='Instagram'>
+    <Meta title='Fitness Track'>
       <Header />
       <Container ref={containerObserverRef} className='px-2 md:px-10 lg:px-32 py-10'>
         {body}

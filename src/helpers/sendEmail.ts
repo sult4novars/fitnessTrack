@@ -19,7 +19,7 @@ const sendEmail = async (to: string, token: string, userId: string): Promise<str
   });
 
   const info = await transporter.sendMail({
-    from: 'Instagram 👻',
+    from: 'Fitness Track 👻',
     to,
     subject: '💬 Change password 🚀',
     text: 'Hello my friend 👋',

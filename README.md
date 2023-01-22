@@ -1,8 +1,6 @@
-<h1 align='center'><strong>Instagram Noob ⚡</strong></h1>
+<h1 align='center'><strong>Fitness Track ⚡</strong></h1>
 
-<p>A social network app cloned from Instagram built with Next.Js, Socket.IO and a lots of other new stuff.</p>
-
-#### **Live Demo:** https://instagram-noob.herokuapp.com
+<p>A social network app cloned from Fitness Track built with Next.Js, Socket.IO and a lots of other new stuff.</p>
 
 ## **Main technologies 📝**
 

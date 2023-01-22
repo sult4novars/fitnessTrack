@@ -15,7 +15,7 @@ function Meta({ title, children }: MetaProps) {
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <meta
           name='description'
-          content='Instagram Clone - Best social network in github not world 😄'
+          content='Fitness Track - Best social network in github not world 😄'
         />
         <title>{title}</title>
       </Head>
