@@ -46,33 +46,7 @@
 - Infinite scroll
 - Skeleton loading
 
-## **Previews 📁**
-
-![image](https://user-images.githubusercontent.com/70432453/169486622-116a2c27-bd0e-4a74-96c5-407e12b4131d.png)
-
-![image](https://user-images.githubusercontent.com/70432453/169486800-e1968142-985a-4e15-9930-8463964177a8.png)
-
-![image](https://user-images.githubusercontent.com/70432453/169487737-342fdabd-c84b-41bd-b468-4ca35dd1abde.png)
-
-![image](https://user-images.githubusercontent.com/70432453/169488501-ddbcf422-8a3e-48fe-856c-edde73b02a11.png)
-
-![image](https://user-images.githubusercontent.com/70432453/169489742-3f4b5df6-9760-49d5-bea3-6114cc7fda7a.png)
-
-## **Install 🔨**
-
-1. Clone Project
-
-```sh
-  git clone https://github.com/igdev116/instagram-noob.git
-```
-
-2. Install Packages
-
-```sh
-  yarn install | npm install
-```
-
-4. Using
+## **Using 🔨**
 
 ```sh
   yarn dev | npm run dev
