@@ -6,8 +6,6 @@ import { useFollowUser, useUser } from '~/hooks';
 import { SpinnerRing } from '~/components/Spinner';
 import Skeleton from '~/components/Skeleton';
 
-import avatar from '~/assets/avatar.png';
-
 interface WidgetSuggestItemProps {
   user: UserFragment;
 }
@@ -23,7 +21,7 @@ const WidgetSuggestItem = ({ user }: WidgetSuggestItemProps) => {
       <Skeleton
         onClick={onVisitProfile}
         className='w-8 h-8 rounded-full mr-3'
-        src={avatar.src}
+        src={'avatar.png'}
         rounded
         alt='Avatar'
         objectFit='cover'

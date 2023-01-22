@@ -26,8 +26,6 @@ import ModalWrapper from './ModalWrapper';
 import SpinnerRing from '../Spinner/SpinnerRing';
 import EmptyResult from '../EmptyResult';
 
-import avatar from '~/assets/avatar.png';
-
 const ModalNewMessage = () => {
   const [searchedUsers, setSearchedUsers] = useState<BaseUserFragment[]>([]);
   const [selectedUsers, setSelectedUsers] = useState<BaseUserFragment[]>([]);
@@ -197,7 +195,7 @@ const ModalNewMessage = () => {
                 objectFit='cover'
                 className='w-11 h-11 mr-3'
                 rounded
-                src={user.avatar ?? avatar.src}
+                src={user.avatar ?? 'avatar.png'}
                 alt='Avatar'
               />
               <div className='min-w-0 mr-4'>

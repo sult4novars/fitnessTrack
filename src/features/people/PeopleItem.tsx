@@ -6,7 +6,7 @@ import { useFollowUser, useUser } from '~/hooks';
 import { SpinnerRing } from '~/components/Spinner';
 import Skeleton from '~/components/Skeleton';
 
-import avatar from '~/assets/avatar.png';
+
 
 interface PeopleItemProps {
   user: UserFragment;
@@ -25,7 +25,7 @@ const PeopleItem = ({ user }: PeopleItemProps) => {
         onClick={onVisitProfile}
         className={clsx('w-11 h-11 mr-3', 'cursor-pointer')}
         rounded
-        src={user.avatar ?? avatar.src}
+        src={user.avatar ?? 'avatar.png'}
         alt='Avatar'
       />
       <div className='min-w-0 mr-3'>

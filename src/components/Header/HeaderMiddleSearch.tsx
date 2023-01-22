@@ -7,8 +7,6 @@ import { useUser } from '~/hooks';
 import Skeleton from '../Skeleton';
 import EmptyResult from '../EmptyResult';
 
-import avatar from '~/assets/avatar.png';
-
 interface HeaderMiddleSearchProps {
   users: BaseUserFragment[];
 }
@@ -31,7 +29,7 @@ const HeaderMiddleSearch = ({ users }: HeaderMiddleSearchProps) => {
           )}
         >
           <Skeleton
-            src={user.avatar ?? avatar.src}
+            src={user.avatar || 'avatar.png'}
             className='w-10 h-10 mr-2.5'
             objectFit='cover'
             rounded

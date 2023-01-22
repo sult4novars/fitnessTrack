@@ -24,8 +24,6 @@ import DetailComment from './DetailComment';
 import ModalWrapper from '../ModalWrapper';
 import PostPhotoError from '~/components/Post/PostPhotoError';
 
-import avatar from '~/assets/avatar.png';
-
 const ModalPostDetail = () => {
   const [caption, setCaption] = useState<string>('');
 
@@ -162,7 +160,7 @@ const ModalPostDetail = () => {
         <div className='flex items-center px-4 py-3 border-b border-line flex-shrink-0'>
           <Skeleton
             online={checkOnline(user._id)}
-            src={user.avatar ?? avatar.src}
+            src={user.avatar ?? 'avatar.png'}
             rounded
             className={clsx('w-8 h-8 mr-3', 'cursor-pointer')}
             objectFit='cover'
@@ -189,7 +187,7 @@ const ModalPostDetail = () => {
             <Skeleton
               online={checkOnline(user._id)}
               onClick={() => handleVisitProfile(user.username)}
-              src={user.avatar ?? avatar.src}
+              src={user.avatar ?? 'avatar.png'}
               rounded
               className={clsx('w-8 h-8 mr-3', 'cursor-pointer')}
               objectFit='cover'

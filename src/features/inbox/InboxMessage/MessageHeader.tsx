@@ -7,8 +7,6 @@ import { useAuthSelector, useConversationSelector } from '~/redux/selectors';
 import IconThreadDetail from '~/components/Icon/IconThreadDetail';
 import Skeleton from '~/components/Skeleton';
 
-import avatar from '~/assets/avatar.png';
-
 interface MessageHeaderProps {
   onHideMessages: () => void;
 }
@@ -26,7 +24,7 @@ const MessageHeader = ({ onHideMessages }: MessageHeaderProps) => {
           className='mr-2 w-8 h-8'
           objectFit='cover'
           rounded
-          src={members[0].avatar ?? avatar.src}
+          src={members[0].avatar ?? 'avatar.png'}
         />
         <span className='font-medium text-sm lg:text-base'>{members[0].username}</span>
       </div>

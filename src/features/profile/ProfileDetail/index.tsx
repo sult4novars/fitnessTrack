@@ -15,8 +15,6 @@ import { SpinnerLogo } from '~/components/Spinner';
 import Skeleton from '~/components/Skeleton';
 import DetailActions from './DetailActions';
 
-import avatar from '~/assets/avatar.png';
-
 interface ProfileDetailProps {
   user: UserWithPostCount;
 }
@@ -91,7 +89,7 @@ const ProfileDetail = ({ user }: ProfileDetailProps) => {
               if (isMe) fileInputRef.current?.click();
             }}
             objectFit='cover'
-            src={user.avatar ?? avatar.src}
+            src={user.avatar ?? 'avatar.png'}
             alt='Avatar'
           />
           {isLoading && (

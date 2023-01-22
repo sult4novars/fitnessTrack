@@ -9,8 +9,6 @@ import IconEmoji from '~/components/Icon/IconEmoji';
 import CreatorFormLocation from './CreatorFormLocation';
 import CreatorFormSetting from './CreatorFormSetting';
 
-import avatar from '~/assets/avatar.png';
-
 interface CreatorFormProps {
   caption: string;
   onChangeCaption: (text: string) => void;
@@ -31,7 +29,7 @@ const CreatorForm = ({ caption, onChangeCaption }: CreatorFormProps) => {
             objectFit='cover'
             rounded
             className='w-7 h-7 mr-2'
-            src={currentUser!.avatar ?? avatar.src}
+            src={currentUser!.avatar ?? 'avatar.png'}
             alt='Avatar'
           />
           <span className='font-bold text-base'>{getNameInMail(currentUser!.email)}</span>

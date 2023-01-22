@@ -7,8 +7,6 @@ import { useFollowUser } from '~/hooks';
 import ModalWrapper from './ModalWrapper';
 import Skeleton from '../Skeleton';
 
-import avatar from '~/assets/avatar.png';
-
 const ModalUnfollow = () => {
   const { hideModal } = useModalContext();
   const { selectedUser } = useAuthSelector();
@@ -29,7 +27,7 @@ const ModalUnfollow = () => {
       <Skeleton
         objectFit='cover'
         className='w-[90px] h-[90px] mx-auto'
-        src={selectedUser!.avatar ?? avatar.src}
+        src={selectedUser!.avatar ?? 'avatar.png'}
         rounded
       />
       <p className='mt-5'>Unfollow @{selectedUser!.username}?</p>

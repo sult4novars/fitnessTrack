@@ -16,8 +16,6 @@ import IconHeart from '~/components/Icon/IconHeart';
 import IconPhotoVideo from '~/components/Icon/IconPhotoVideo';
 import Skeleton from '~/components/Skeleton';
 
-import photo from '~/assets/photo.png';
-
 interface ProfilePostsProps {
   userId: string;
 }
@@ -79,7 +77,7 @@ const ProfilePosts = ({ userId }: ProfilePostsProps) => {
           }}
           className={clsx('relative', 'btn group h-36 md:h-64 lg:h-[293px]')}
         >
-          <Skeleton objectFit='cover' src={post.photo ?? photo.src} alt='Post' />
+          <Skeleton objectFit='cover' src={post.photo ?? 'photo.png'} alt='Post' />
           <button
             className={clsx(
               'absolute inset-0',

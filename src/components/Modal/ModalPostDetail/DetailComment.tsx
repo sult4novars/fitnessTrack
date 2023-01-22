@@ -12,8 +12,6 @@ import { calculateElapsedTime } from '~/helpers/time';
 import IconHeart from '~/components/Icon/IconHeart';
 import Skeleton from '~/components/Skeleton';
 
-import avatar from '~/assets/avatar.png';
-
 interface DetailCommentProps {
   comment: CommentFragment;
   postId: string;
@@ -46,7 +44,7 @@ const DetailComment = ({
       <Skeleton
         online={checkOnline(user._id)}
         onClick={handleVisitProfile}
-        src={user.avatar ?? avatar.src}
+        src={user.avatar ?? 'avatar.png'}
         rounded
         className={clsx('w-8 h-8 mr-3', 'cursor-pointer')}
         objectFit='cover'

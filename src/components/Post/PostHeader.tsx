@@ -8,8 +8,6 @@ import { postActions } from '~/redux/slices/postSlice';
 import { useStoreDispatch } from '~/redux/store';
 import { useFollowUser, useUser } from '~/hooks';
 
-import avatar from '~/assets/avatar.png';
-
 import Skeleton from '../Skeleton';
 import SpinnerRing from '../Spinner/SpinnerRing';
 
@@ -35,7 +33,7 @@ const PostHeader = (post: PostFragment) => {
           rounded
           objectFit='cover'
           className={clsx('w-8 h-8 mr-3', 'cursor-pointer')}
-          src={user.avatar ?? avatar.src}
+          src={user.avatar ?? 'avatar.png'}
           alt='Avatar'
         />
         <span

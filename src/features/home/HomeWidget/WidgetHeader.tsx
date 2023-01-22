@@ -6,8 +6,6 @@ import { useUser } from '~/hooks';
 
 import Skeleton from '~/components/Skeleton';
 
-import avatar from '~/assets/avatar.png';
-
 const WidgetHeader = () => {
   const currentUser = useAuthSelector().currentUser!;
 
@@ -22,7 +20,7 @@ const WidgetHeader = () => {
         onClick={onVisitProfile}
         rounded
         className={clsx('w-14 h-14 rounded-full mr-3', 'cursor-pointer')}
-        src={currentUser.avatar ?? avatar.src}
+        src={currentUser.avatar ?? 'avatar.png'}
         alt='Avatar'
       />
       <div>

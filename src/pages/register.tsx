@@ -11,7 +11,7 @@ import { registerSchema } from '~/helpers/formSchemas';
 import { useRegisterMutation, RegisterInput } from '~/types/generated';
 import { withRoute } from '~/hocs';
 import { toast } from '~/store/toast';
-import { useUserSelector } from '~/redux/selectors';
+// import { useUserSelector } from '~/redux/selectors';
 import toErrorMap from '~/helpers/toErrorMap';
 
 import { SpinnerRing } from '~/components/Spinner';
@@ -22,7 +22,7 @@ import FormField from '~/components/FormField';
 // images
 
 const Register = () => {
-  const { isLoggedIn } = useUserSelector();
+  // const { isLoggedIn } = useUserSelector();
 
   const [registerUser, { loading: registerUserLoading }] = useRegisterMutation();
 

@@ -13,8 +13,6 @@ import { calculateElapsedTime } from '~/helpers/time';
 
 import Skeleton from '~/components/Skeleton';
 
-import avatar from '~/assets/avatar.png';
-
 interface SidebarConversationProps {
   currentUser: UserFragment | null;
   conversation: ConversationWithOnlineStatus;
@@ -113,7 +111,7 @@ const SidebarConversation = ({
         objectFit='cover'
         rounded
         online={receiver.isOnline}
-        src={receiver.avatar ?? avatar.src}
+        src={receiver.avatar ?? 'avatar.png'}
       />
       <div className='min-w-0 text-sm-1 lg:text-sm'>
         <div

@@ -15,7 +15,6 @@ import IconHome from '../Icon/IconHome';
 import IconMessenger from '../Icon/IconMessenger';
 import Skeleton from '../Skeleton';
 
-import avatar from '~/assets/avatar.png';
 import HeaderRightMenu from './HeaderRightMenu';
 
 const HeaderRight = () => {
@@ -58,7 +57,7 @@ const HeaderRight = () => {
           onClick={() => setIsShowMenu(!isShowMenu)}
           rounded
           className='w-7 h-7'
-          src={currentUser?.avatar ?? avatar.src}
+          src={currentUser?.avatar ?? 'avatar.png'}
         />
         {isShowMenu && <HeaderRightMenu ref={menuRef} />}
       </div>
