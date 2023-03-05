@@ -5,8 +5,6 @@ import { usePost } from '~/hooks';
 
 import IconComment from './Icon/IconComment';
 import IconHeart from './Icon/IconHeart';
-import IconSave from './Icon/IconSave';
-import IconShare from './Icon/IconShare';
 
 interface ActionsProps {
   post: PostFragment;
@@ -26,9 +24,7 @@ const Actions = ({ className, post, onComment }: ActionsProps) => {
           active={isLiked}
         />
         <IconComment onClick={onComment} className={clsx('cursor-pointer', 'hover:opacity-60')} />
-        <IconShare className={clsx('cursor-pointer', 'hover:opacity-60')} />
       </div>
-      <IconSave className={clsx('cursor-pointer', 'hover:opacity-60')} />
     </div>
   );
 };

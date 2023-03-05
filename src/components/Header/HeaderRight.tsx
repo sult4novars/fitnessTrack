@@ -7,10 +7,7 @@ import { MODAL_TYPES, useModalContext } from '~/contexts/ModalContext';
 import { useAuthSelector } from '~/redux/selectors';
 import { ROUTES } from '~/constants';
 import { useClickOutside } from '~/hooks';
-
-import IconCompass from '../Icon/IconCompass';
 import IconCreate from '../Icon/IconCreate';
-import IconHeart from '../Icon/IconHeart';
 import IconHome from '../Icon/IconHome';
 import IconMessenger from '../Icon/IconMessenger';
 import Skeleton from '../Skeleton';
@@ -47,8 +44,6 @@ const HeaderRight = () => {
         className={clsx('flex-shrink-0', 'cursor-pointer')}
         active={modalTypes.includes(MODAL_TYPES.POST_CREATOR)}
       />
-      <IconCompass className={clsx('flex-shrink-0', 'cursor-pointer')} active={false} />
-      <IconHeart className={clsx('flex-shrink-0', 'cursor-pointer')} active={false} />
 
       <div className={clsx('relative', 'flex-shrink-0', 'cursor-pointer')}>
         <Skeleton

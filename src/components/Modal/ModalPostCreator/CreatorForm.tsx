@@ -7,7 +7,6 @@ import { commaBetweenNumbers, getNameInMail } from '~/helpers/format';
 import Skeleton from '~/components/Skeleton';
 import IconEmoji from '~/components/Icon/IconEmoji';
 import CreatorFormLocation from './CreatorFormLocation';
-import CreatorFormSetting from './CreatorFormSetting';
 
 interface CreatorFormProps {
   caption: string;
@@ -54,8 +53,11 @@ const CreatorForm = ({ caption, onChangeCaption }: CreatorFormProps) => {
         </div>
       </div>
 
-      <CreatorFormLocation />
-      <CreatorFormSetting />
+      <CreatorFormLocation
+        onChange={(e) => {
+          onChangeCaption(e.target.value);
+        }}
+      />
     </div>
   );
 };

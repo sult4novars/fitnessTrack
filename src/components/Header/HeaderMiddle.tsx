@@ -14,7 +14,7 @@ import HeaderMiddleLoading from './HeaderMiddleLoading';
 import HeaderMiddleSearch from './HeaderMiddleSearch';
 
 const HeaderMiddle = () => {
-  const [searchedUsers, setSearchedUsers] = useState<BaseUserFragment[]>([]);
+  const [searchedUsers = [], setSearchedUsers] = useState<BaseUserFragment[]>([]);
   const [isOpenSearchList, setIsOpenSearchList] = useState<boolean>(false);
 
   const searchListRef = useRef<HTMLDivElement>(null);
@@ -34,7 +34,7 @@ const HeaderMiddle = () => {
 
     const data = response.data?.searchUser;
 
-    if (data?.success) setSearchedUsers(data.users!);
+    if (data?.success && data.users) setSearchedUsers(data.users);
   };
 
   const handleInputChange = handleDebounce(handleSearchUser, () => setSearchedUsers([]));
@@ -66,10 +66,10 @@ const HeaderMiddle = () => {
             'abs-center-x top-[calc(100%+10px)] z-[100]',
             'w-[140%] shadow-[0_1px_5px_1px_rgba(0,0,0,0.0975)] rounded-md py-2 overflow-y-auto',
             'bg-white',
-            debouncing || searchedUsers.length === 0 ? 'h-96' : 'max-h-96',
+            debouncing || searchedUsers?.length === 0 ? 'h-96' : 'max-h-96',
           )}
         >
-          {debouncing && searchedUsers.length === 0 ? (
+          {debouncing && searchedUsers?.length === 0 ? (
             <HeaderMiddleLoading />
           ) : (
             <HeaderMiddleSearch users={searchedUsers} />
