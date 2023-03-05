@@ -8,7 +8,7 @@ import isEqual from 'lodash/isEqual';
 import merge from 'deepmerge';
 
 import { toast } from '~/store/toast';
-import { __prod__ } from '~/constants';
+import { DOMAIN } from '~/constants';
 
 const APOLLO_STATE_PROP_NAME = '__APOLLO_STATE__';
 
@@ -46,7 +46,7 @@ const createApolloClient = (headers: IncomingHttpHeaders | null = null): ApolloC
   };
 
   const httpLink = new HttpLink({
-    uri: '/api/graphql',
+    uri: DOMAIN + '/api/graphql',
     fetchOptions: {
       mode: 'cors',
     },
