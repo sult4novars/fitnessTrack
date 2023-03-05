@@ -1,7 +1,7 @@
 import { Arg, ClassType, Ctx, Mutation, Resolver, UseMiddleware } from 'type-graphql';
 
 // types
-import type Context from '~/db/types/context';
+import type { Context } from '~/db/types/context';
 import { AvatarMutationResponse } from '~/db/types/responses/user';
 
 // models

@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
-export default interface Context {
+export type Context = {
   req: NextApiRequest & { userId: string; accessToken?: string };
   res: NextApiResponse;
-}
+};

@@ -4,7 +4,7 @@ import { buildSchema } from 'type-graphql';
 import Cors from 'micro-cors';
 
 // types
-import type Context from '~/db/types/context';
+import type { Context } from '~/db/types/context';
 
 import connectToDb from '~/db/connectToDb';
 
