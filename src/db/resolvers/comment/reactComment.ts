@@ -9,7 +9,7 @@ import {
 } from 'type-graphql';
 
 // types
-import { Context } from '~/db/types/context';
+import type Context from '~/db/types/context';
 import { BaseResponse } from '~/db/types/shared';
 import { ReactionType } from '~/db/types/utils';
 
