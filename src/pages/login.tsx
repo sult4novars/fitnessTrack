@@ -19,8 +19,6 @@ import toErrorMap from '~/helpers/toErrorMap';
 import { SpinnerRing } from '~/components/Spinner';
 import Meta from '~/layouts/Meta';
 import FormField from '~/components/FormField';
-// import ButtonFacebook from '~/components/Button/ButtonFacebook';
-// import ButtonGoogle from '~/components/Button/ButtonGoogle';
 import FormDivider from '~/components/FormDivider';
 
 // images

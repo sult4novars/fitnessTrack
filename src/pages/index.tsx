@@ -14,7 +14,7 @@ import Meta from '~/layouts/Meta';
 
 const Home: NextPage = () => {
   return (
-    <Meta title='Instagram'>
+    <Meta title='FitnessTrack'>
       <Header />
       <Container className='grid grid-cols-3 pt-7'>
         <section className='col-span-3 lg:col-span-2 pb-10 space-y-10'>

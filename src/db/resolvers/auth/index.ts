@@ -7,8 +7,6 @@ import changePassword from './changePassword';
 import forgotPassword from './forgotPassword';
 import getSession from './getSession';
 import login from './login';
-import loginFacebook from './loginFacebook';
-import loginGoogle from './loginGoogle';
 import logout from './logout';
 import register from './register';
 
@@ -16,8 +14,6 @@ import register from './register';
 export default class AuthResolver extends extender(
   register,
   login,
-  loginFacebook,
-  loginGoogle,
   logout,
   changePassword,
   forgotPassword,
